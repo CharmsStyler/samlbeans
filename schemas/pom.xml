@@ -14,7 +14,13 @@
     <packaging>pom</packaging>
 
     <name>SamlBeans :: Schemas</name>
-    <description>Schema Definitions (.xsd files) used to generate SAML 2 POJOs</description>
+    <description>
+        Schema Definitions (.xsd files) used to generate SAML 2 POJOs.  All sub-modules
+        are used to 'seed' Java objects based on the XSD specification and are moved to
+        a parallel directory under the project root where further edits are made.
+        Therefore, this module and it's children aren't executed often at all and mostly
+        exist as a reference.
+    </description>
 
     <modules>
         <module>w3-xmldsig-core</module>
