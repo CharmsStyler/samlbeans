@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>samlbeans</groupId>
+        <artifactId>schemas</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>saml2-assertion</artifactId>
+    <packaging>jar</packaging>
+
+    <name>SamlBeans :: Schemas :: SAML 2.0 Assertion</name>
+    <description>JavaBeans-compatible implementation of the SAML 2.0 Assertion schema</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

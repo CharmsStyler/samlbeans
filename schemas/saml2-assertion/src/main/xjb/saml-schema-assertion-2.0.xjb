@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="../xsd/saml-schema-assertion-2.0.xsd" node="/xs:schema">
+
+    <jxb:schemaBindings>
+        <jxb:package name="org.xml.saml.saml2.assertion"/>
+    </jxb:schemaBindings>
+
+    <jxb:bindings node="//xs:complexType[@name='BaseIDAbstractType']">
+        <jxb:class name="BaseID"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ActionType']">
+        <jxb:class name="Action"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AdviceType']">
+        <jxb:class name="Advice"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AssertionType']">
+        <jxb:class name="Assertion"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AttributeStatementType']">
+        <jxb:class name="AttributeStatement"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AttributeType']">
+        <jxb:class name="Attribute"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AudienceRestrictionType']">
+        <jxb:class name="AudienceRestriction"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AuthnContextType']">
+        <jxb:class name="AuthnContext"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AuthzDecisionStatementType']">
+        <jxb:class name="AuthzDecisionStatement"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ConditionAbstractType']">
+        <jxb:class name="Condition"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ConditionsType']">
+        <jxb:class name="Conditions"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:simpleType[@name='DecisionType']">
+        <jxb:typesafeEnumClass name="Decision"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptedElementType']">
+        <jxb:class name="EncryptedElement"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EvidenceType']">
+        <jxb:class name="Evidence"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='KeyInfoConfirmationDataType']">
+        <jxb:class name="KeyInfoConfirmationData"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='NameIDType']">
+        <jxb:class name="NameID"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='OneTimeUseType']">
+        <jxb:class name="OneTimeUse"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ProxyRestrictionType']">
+        <jxb:class name="ProxyRestriction"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='StatementAbstractType']">
+        <jxb:class name="Statement"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SubjectConfirmationDataType']">
+        <jxb:class name="SubjectConfirmationData"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SubjectConfirmationType']">
+        <jxb:class name="SubjectConfirmation"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SubjectLocalityType']">
+        <jxb:class name="SubjectLocality"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SubjectType']">
+        <jxb:class name="Subject"/>
+    </jxb:bindings>
+
+</jxb:bindings>

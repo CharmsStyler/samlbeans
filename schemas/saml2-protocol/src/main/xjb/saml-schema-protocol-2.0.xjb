@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="../xsd/saml-schema-protocol-2.0.xsd" node="/xs:schema">
+
+    <jxb:schemaBindings>
+        <jxb:package name="org.xml.saml.saml2.protocol"/>
+    </jxb:schemaBindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ArtifactResolveType']">
+        <jxb:class name="ArtifactResolve"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ArtifactResponseType']">
+        <jxb:class name="ArtifactResponse"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AssertionIDRequestType']">
+        <jxb:class name="AssertionIDRequest"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AttributeQueryType']">
+        <jxb:class name="AttributeQuery"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:simpleType[@name='AuthnContextComparisonType']">
+        <jxb:typesafeEnumClass name="AuthnContextComparison"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AuthnQueryType']">
+        <jxb:class name="AuthnQuery"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AuthnRequestType']">
+        <jxb:class name="AuthnRequest"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AuthzDecisionQueryType']">
+        <jxb:class name="AuthzDecisionQuery"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ExtensionsType']">
+        <jxb:class name="Extensions"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='IDPEntryType']">
+        <jxb:class name="IDPEntry"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='IDPListType']">
+        <jxb:class name="IDPList"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='LogoutRequestType']">
+        <jxb:class name="LogoutRequest"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ManageNameIDRequestType']">
+        <jxb:class name="ManageNameIDRequest"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='NameIDMappingRequestType']">
+        <jxb:class name="NameIDMappingRequest"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='NameIDMappingResponseType']">
+        <jxb:class name="NameIDMappingResponse"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='NameIDPolicyType']">
+        <jxb:class name="NameIDPolicy"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='RequestAbstractType']">
+        <jxb:class name="Request"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='RequestedAuthnContextType']">
+        <jxb:class name="RequestedAuthnContext"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ResponseType']">
+        <jxb:class name="Response"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ScopingType']">
+        <jxb:class name="Scoping"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='StatusCodeType']">
+        <jxb:class name="StatusCode"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='StatusDetailType']">
+        <jxb:class name="StatusDetail"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='StatusResponseType']">
+        <jxb:class name="StatusResponse"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='StatusType']">
+        <jxb:class name="Status"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SubjectQueryAbstractType']">
+        <jxb:class name="SubjectQuery"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='TerminateType']">
+        <jxb:class name="Terminate"/>
+    </jxb:bindings>
+
+</jxb:bindings>

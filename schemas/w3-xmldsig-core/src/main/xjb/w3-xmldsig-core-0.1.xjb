@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="../xsd/w3-xmldsig-core-0.1.xsd" node="/xs:schema">
+
+    <jxb:schemaBindings>
+        <jxb:package name="org.w3.xmldsig"/>
+    </jxb:schemaBindings>
+
+    <jxb:bindings node="//xs:complexType[@name='CanonicalizationMethodType']">
+        <jxb:class name="CanonicalizationMethod"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='DigestMethodType']">
+        <jxb:class name="DigestMethod"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='DSAKeyValueType']">
+        <jxb:class name="DSAKeyValue"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='KeyInfoType']">
+        <jxb:class name="KeyInfo"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='KeyValueType']">
+        <jxb:class name="KeyValue"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ManifestType']">
+        <jxb:class name="Manifest"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ObjectType']">
+        <jxb:class name="SignatureObject"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='PGPDataType']">
+        <jxb:class name="PGPData"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ReferenceType']">
+        <jxb:class name="Reference"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='RetrievalMethodType']">
+        <jxb:class name="RetrievalMethod"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='RSAKeyValueType']">
+        <jxb:class name="RSAKeyValue"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SignatureMethodType']">
+        <jxb:class name="SignatureMethod"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SignaturePropertiesType']">
+        <jxb:class name="SignatureProperties"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SignaturePropertyType']">
+        <jxb:class name="SignatureProperty"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SignatureType']">
+        <jxb:class name="Signature"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SignatureValueType']">
+        <jxb:class name="SignatureValue"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SignedInfoType']">
+        <jxb:class name="SignedInfo"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SPKIDataType']">
+        <jxb:class name="SPKIData"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='TransformsType']">
+        <jxb:class name="Transforms"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='TransformType']">
+        <jxb:class name="Transform"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='X509DataType']">
+        <jxb:class name="X509Data"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='X509IssuerSerialType']">
+        <jxb:class name="X509IssuerSerial"/>
+    </jxb:bindings>
+
+</jxb:bindings>

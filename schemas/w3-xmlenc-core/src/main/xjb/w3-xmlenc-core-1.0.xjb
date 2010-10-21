@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="../xsd/w3-xmlenc-core-1.0.xsd" node="/xs:schema">
+
+    <jxb:schemaBindings>
+        <jxb:package name="org.w3.xmlenc"/>
+    </jxb:schemaBindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AgreementMethodType']">
+        <jxb:class name="AgreementMethod"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='CipherDataType']">
+        <jxb:class name="CipherData"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='CipherReferenceType']">
+        <jxb:class name="CipherReference"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptedType']">
+        <jxb:class name="Encrypted"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptedDataType']">
+        <jxb:class name="EncryptedData"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptedKeyType']">
+        <jxb:class name="EncryptedKey"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptionMethodType']">
+        <jxb:class name="EncryptionMethod"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptionPropertiesType']">
+        <jxb:class name="EncryptionProperties"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EncryptionPropertyType']">
+        <jxb:class name="EncryptionProperty"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ReferenceType']">
+        <jxb:class name="Reference"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='TransformsType']">
+        <jxb:class name="Transforms"/>
+    </jxb:bindings>
+
+</jxb:bindings>
