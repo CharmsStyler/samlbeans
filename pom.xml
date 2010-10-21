@@ -57,6 +57,7 @@
     <modules>
         <module>w3-xmldsig-core</module>
         <module>w3-xmlenc-core</module>
+        <module>saml2-assertion</module>
     </modules>
 
     <dependencies>
