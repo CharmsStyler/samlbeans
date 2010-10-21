@@ -2,13 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>samlbeans</groupId>
-        <artifactId>schemas</artifactId>
+        <groupId>samlbeans.schemas</groupId>
+        <artifactId>schemas-root</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>saml2-assertion</artifactId>
+    <artifactId>saml2-schema-assertion</artifactId>
     <packaging>jar</packaging>
 
     <name>SamlBeans :: Schemas :: SAML 2.0 Assertion</name>

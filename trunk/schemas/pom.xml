@@ -5,11 +5,12 @@
 
     <parent>
         <groupId>samlbeans</groupId>
-        <artifactId>samlbeans</artifactId>
+        <artifactId>samlbeans-root</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>schemas</artifactId>
+    <groupId>samlbeans.schemas</groupId>
+    <artifactId>schemas-root</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
