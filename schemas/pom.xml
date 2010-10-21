@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <name>SamlBeans :: Schemas</name>
-    <description>Saml 2.0 Schema Definitions used to generate POJOs</description>
+    <description>Schema Definitions (.xsd files) used to generate SAML 2 POJOs</description>
 
     <modules>
         <module>w3-xmldsig-core</module>
