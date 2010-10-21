@@ -16,6 +16,25 @@
 
     <name>SamlBeans</name>
     <description>SamlBeans provides JavaBeans-compatible POJOs for the SAML 2.0 specification</description>
+    <url>http://code.google.com/p/samlbeans</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>http://code.google.com/p/samlbeans/source/browse/#svn/trunk</url>
+        <connection>http://samlbeans.googlecode.com/svn/trunk</connection>
+        <developerConnection>https://samlbeans.googlecode.com/svn/trunk</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>lhazlewood</id>
+            <name>Les Hazlewood</name>
+            <email>les@katasoft.com</email>
+        </developer>
+    </developers>
 
     <modules>
         <module>schemas</module>
@@ -27,5 +46,27 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
+
+    <!-- Ideally this should be in a $HOME/.m2/settings.xml file as a best practice, but at the moment
+         it is nicer to do an SVN checkout and have the build just 'work' without any configuration: -->
+    <repositories>
+        <!-- Prefer Maven Central for releases over Katasoft's: -->
+        <repository>
+            <id>m2central-releases</id>
+            <name>Maven 2 Central Artifact Repository</name>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>katasoft-releases</id>
+            <name>Katasoft Artifact Repository: Releases</name>
+            <url>http://repository.katasoft.com/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
