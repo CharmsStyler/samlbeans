@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>samlbeans</groupId>
-    <artifactId>samlbeans</artifactId>
+    <artifactId>samlbeans-root</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -55,7 +55,35 @@
     </developers>
 
     <modules>
+        <module>w3-xmldsig-core</module>
+        <module>w3-xmlenc-core</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Intra-project dependencies: -->
+            <dependency>
+                <groupId>samlbeans</groupId>
+                <artifactId>w3-xmldsig-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>samlbeans</groupId>
+                <artifactId>w3-xmlenc-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- 3rd-party dependencies: -->
+
+        </dependencies>
+    </dependencyManagement>
 
     <profiles>
         <profile>
@@ -65,13 +93,6 @@
             </modules>
         </profile>
     </profiles>
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-    </dependencies>
 
     <!-- Ideally this should be in a $HOME/.m2/settings.xml file as a best practice, but at the moment
          it is nicer to do an SVN checkout and have the build just 'work' without any configuration: -->

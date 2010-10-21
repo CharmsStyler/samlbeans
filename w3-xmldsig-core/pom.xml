@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>samlbeans</groupId>
+        <artifactId>samlbeans-root</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>w3-xmldsig-core</artifactId>
+    <packaging>jar</packaging>
+
+    <name>SamlBeans :: XML Digital Signature</name>
+    <description>JavaBeans-compatible object model reflecting the W3C Digital Signature schema standard.</description>
+
+</project>
