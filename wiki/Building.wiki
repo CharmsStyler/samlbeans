@@ -1,0 +1,47 @@
+#summary How to build the SamlBeans project
+
+SamlBeans uses Maven 2 to build.  
+
+The project's root pom.xml inherits from a parent pom hierarchy that handles a _lot_ of the boilerplate in setting up a clean maven from scratch - ensuring the correct java compiler plugin is used, that the project uses UTF-8 encoding by default, and much more.
+
+That parent pom hierarchy is not currently in Maven Central, so you'll need to add a repository to your local $HOME/.m2/settings.xml file.  After you add the following, you'll be able to build on the command line as expected.
+
+{{{
+<!-- If you have an existing profiles section, add to it.  If not, create it: -->
+<profiles>
+    <profile>
+        <id>katasoft</id>
+        <repositories>
+            <repository>
+                <id>katasoft-releases</id>
+                <name>Katasoft Artifact Repository: Releases</name>
+                <url>http://repository.katasoft.com/content/groups/public</url>
+                <layout>default</layout>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+            </repository>
+            <repository>
+                <id>katasoft-snapshots</id>
+                <name>Katasoft Artifact Repository: Snapshots</name>
+                <url>http://repository.katasoft.com/content/groups/public-snapshots</url>
+                <layout>default</layout>
+                <releases>
+                    <enabled>false</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+</profiles>
+
+<activeProfiles>
+    <!-- Any other profiles you may have -->
+    <activeProfile>katasoft</activeProfile>
+</activeProfiles>
+}}}
