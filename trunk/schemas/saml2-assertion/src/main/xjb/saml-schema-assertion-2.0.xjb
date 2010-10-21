@@ -38,6 +38,10 @@
         <jxb:class name="AuthnContext"/>
     </jxb:bindings>
 
+    <jxb:bindings node="//xs:complexType[@name='AuthnStatementType']">
+        <jxb:class name="AuthnStatement"/>
+    </jxb:bindings>
+
     <jxb:bindings node="//xs:complexType[@name='AuthzDecisionStatementType']">
         <jxb:class name="AuthzDecisionStatement"/>
     </jxb:bindings>
