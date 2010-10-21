@@ -28,17 +28,43 @@
         <connection>http://samlbeans.googlecode.com/svn/trunk</connection>
         <developerConnection>https://samlbeans.googlecode.com/svn/trunk</developerConnection>
     </scm>
+    <mailingLists>
+        <mailingList>
+            <name>SamlBeans Users Mailing List</name>
+            <subscribe>http://groups.google.com/group/samlbeans-user</subscribe>
+            <unsubscribe>http://groups.google.com/group/samlbeans-user</unsubscribe>
+            <post>samlbeans-user@googlegroups.com</post>
+        </mailingList>
+        <mailingList>
+            <name>SamlBeans Developers Mailing List</name>
+            <subscribe>http://groups.google.com/group/samlbeans-dev</subscribe>
+            <unsubscribe>http://groups.google.com/group/samlbeans-dev</unsubscribe>
+            <post>samlbeans-dev@googlegroups.com</post>
+        </mailingList>
+    </mailingLists>
     <developers>
         <developer>
             <id>lhazlewood</id>
             <name>Les Hazlewood</name>
             <email>les@katasoft.com</email>
+            <url>http://leshazlewood.com</url>
+            <organization>Katasoft, Inc.</organization>
+            <organizationUrl>http://www.katasoft.com</organizationUrl>
+            <timezone>-8</timezone>
         </developer>
     </developers>
 
     <modules>
-        <module>schemas</module>
     </modules>
+
+    <profiles>
+        <profile>
+            <id>schemas</id>
+            <modules>
+                <module>schemas</module>
+            </modules>
+        </profile>
+    </profiles>
 
     <dependencies>
         <dependency>
