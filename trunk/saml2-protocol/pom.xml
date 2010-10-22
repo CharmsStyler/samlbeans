@@ -8,11 +8,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>saml2-assertion</artifactId>
+    <artifactId>saml2-protocol</artifactId>
     <packaging>jar</packaging>
 
-    <name>SamlBeans :: SAML 2.0 Assertion</name>
-    <description>JavaBeans-compatible object model reflecting the SAML 2.0 Assertion schema standard.</description>
+    <name>SamlBeans :: SAML 2.0 Protocol</name>
+    <description>JavaBeans-compatible object model reflecting the SAML 2.0 Protocol schema standard.</description>
 
     <dependencies>
         <dependency>
@@ -22,6 +22,10 @@
         <dependency>
             <groupId>samlbeans</groupId>
             <artifactId>w3-xmlenc-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>samlbeans</groupId>
+            <artifactId>saml2-assertion</artifactId>
         </dependency>
     </dependencies>
 
