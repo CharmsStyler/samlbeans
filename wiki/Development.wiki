@@ -1,8 +1,8 @@
-#summary Developer documentation for source code work
+#summary Documentation for developers working on the source code
 
 = Introduction =
 
-This page covers material interesting to developers as they work on the source code.
+This page covers material relevant to developers as they work on the source code.
 
 = Details =
 
