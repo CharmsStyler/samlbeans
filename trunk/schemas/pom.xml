@@ -28,6 +28,7 @@
         <module>w3-xmlenc-core</module>
         <module>saml2-assertion</module>
         <module>saml2-protocol</module>
+        <module>saml2-metadata</module>
     </modules>
 
     <build>

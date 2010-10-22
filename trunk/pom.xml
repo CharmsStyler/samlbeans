@@ -59,6 +59,7 @@
         <module>w3-xmlenc-core</module>
         <module>saml2-assertion</module>
         <module>saml2-protocol</module>
+        <module>saml2-metadata</module>
     </modules>
 
     <dependencies>
@@ -89,6 +90,11 @@
             <dependency>
                 <groupId>samlbeans</groupId>
                 <artifactId>saml2-protocol</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>samlbeans</groupId>
+                <artifactId>saml2-metadata</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
