@@ -15,9 +15,9 @@ This page covers material interesting to developers as they work on the source c
 This workflow exists to ensure 3 things:
   * That the Java code accurately represents its specification schema.
   * JAXB annotations are automatically added to the source code by JAXB XJC so we don't have to do this ourselves (and to ensure the annotations are correctly placed)
-  * Once generated, we can edit the code as necessary to provide a more robust POJO library.
+  * Once generated, we can edit the code as necessary to provide a more robust POJO library.`*`
 
-An important note on the last bullet point is that the developers have to ensure that the JAXB annotations aren't changed!  They reflect a specification schema and should not be altered if the code is to remain compliant with the specification.
+`*`An important note on the last bullet point is that the developers must ensure that the JAXB annotations aren't changed!  They reflect a specification schema and should not be altered if the code is to remain compliant with the specification.
 
 It is typically bad form to manually maintain JAXB-generated code since the schema could change and your code would be invalid. However SAML 2.0 is a final specification and won't change (a new version would arise instead), and not something we need to worry about.
 
