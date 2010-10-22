@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="../xsd/saml-schema-metadata-2.0.xsd" node="/xs:schema">
+
+    <jxb:schemaBindings>
+        <jxb:package name="org.xml.saml.saml2.metadata"/>
+    </jxb:schemaBindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AdditionalMetadataLocationType']">
+        <jxb:class name="AdditionalMetadataLocation"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AffiliationDescriptorType']">
+        <jxb:class name="AffiliationDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AttributeAuthorityDescriptorType']">
+        <jxb:class name="AttributeAuthorityDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AttributeConsumingServiceType']">
+        <jxb:class name="AttributeConsumingService"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='AuthnAuthorityDescriptorType']">
+        <jxb:class name="AuthnAuthorityDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ContactType']">
+        <jxb:class name="Contact"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:simpleType[@name='ContactTypeType']">
+        <jxb:typesafeEnumClass name="ContactType"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EndpointType']">
+        <jxb:class name="Endpoint"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EntitiesDescriptorType']">
+        <jxb:class name="EntitiesDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='EntityDescriptorType']">
+        <jxb:class name="EntityDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='ExtensionsType']">
+        <jxb:class name="Extensions"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='IDPSSODescriptorType']">
+        <jxb:class name="IDPSSODescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='IndexedEndpointType']">
+        <jxb:class name="IndexedEndpoint"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='KeyDescriptorType']">
+        <jxb:class name="KeyDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:simpleType[@name='KeyTypes']">
+        <jxb:typesafeEnumClass name="KeyType"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='localizedNameType']">
+        <jxb:class name="LocalizedName"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='localizedURIType']">
+        <jxb:class name="LocalizedURI"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='OrganizationType']">
+        <jxb:class name="Organization"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='PDPDescriptorType']">
+        <jxb:class name="PDPDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='RequestedAttributeType']">
+        <jxb:class name="RequestedAttribute"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='RoleDescriptorType']">
+        <jxb:class name="RoleDescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SSODescriptorType']">
+        <jxb:class name="SSODescriptor"/>
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='SPSSODescriptorType']">
+        <jxb:class name="SPSSODescriptor"/>
+    </jxb:bindings>
+
+</jxb:bindings>
