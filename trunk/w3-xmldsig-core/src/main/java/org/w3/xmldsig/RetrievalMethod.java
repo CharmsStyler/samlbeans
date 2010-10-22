@@ -22,12 +22,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for RetrievalMethodType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for RetrievalMethodType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
+ * <p/>
  * <pre>
  * &lt;complexType name="RetrievalMethodType">
  *   &lt;complexContent>
@@ -41,31 +40,27 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RetrievalMethodType", propOrder = {
-    "transforms"
-})
+@XmlType(name = "RetrievalMethodType", propOrder = {"transforms"})
 public class RetrievalMethod {
 
     @XmlElement(name = "Transforms")
     protected Transforms transforms;
+
     @XmlAttribute(name = "URI")
     @XmlSchemaType(name = "anyURI")
     protected String uri;
+
     @XmlAttribute(name = "Type")
     @XmlSchemaType(name = "anyURI")
     protected String type;
 
     /**
      * Gets the value of the transforms property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Transforms }
-     *     
+     *
+     * @return possible object is
+     *         {@link Transforms }
      */
     public Transforms getTransforms() {
         return transforms;
@@ -73,11 +68,9 @@ public class RetrievalMethod {
 
     /**
      * Sets the value of the transforms property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Transforms }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Transforms }
      */
     public void setTransforms(Transforms value) {
         this.transforms = value;
@@ -85,11 +78,9 @@ public class RetrievalMethod {
 
     /**
      * Gets the value of the uri property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getURI() {
         return uri;
@@ -97,11 +88,9 @@ public class RetrievalMethod {
 
     /**
      * Sets the value of the uri property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setURI(String value) {
         this.uri = value;
@@ -109,11 +98,9 @@ public class RetrievalMethod {
 
     /**
      * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getType() {
         return type;
@@ -121,11 +108,9 @@ public class RetrievalMethod {
 
     /**
      * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setType(String value) {
         this.type = value;

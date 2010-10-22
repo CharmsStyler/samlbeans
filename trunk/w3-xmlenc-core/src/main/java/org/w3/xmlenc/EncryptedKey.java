@@ -21,12 +21,10 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for EncryptedKeyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for EncryptedKeyType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="EncryptedKeyType">
  *   &lt;complexContent>
@@ -40,92 +38,69 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "EncryptedKeyType", propOrder = {
-    "referenceList",
-    "carriedKeyName"
-})
-public class EncryptedKey
-    extends Encrypted
-{
+@XmlType(name = "EncryptedKeyType", propOrder = {"referenceList", "carriedKeyName"})
+public class EncryptedKey extends Encrypted {
 
     @XmlElement(name = "ReferenceList")
     protected ReferenceList referenceList;
+
     @XmlElement(name = "CarriedKeyName")
     protected String carriedKeyName;
+
     @XmlAttribute(name = "Recipient")
     protected String recipient;
 
     /**
-     * Gets the value of the referenceList property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ReferenceList }
-     *     
+     * Returns the ReferenceList.
+     *
+     * @return the ReferenceList.
      */
     public ReferenceList getReferenceList() {
         return referenceList;
     }
 
     /**
-     * Sets the value of the referenceList property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ReferenceList }
-     *     
+     * Sets the ReferenceList.
+     *
+     * @param value the ReferenceList.
      */
     public void setReferenceList(ReferenceList value) {
         this.referenceList = value;
     }
 
     /**
-     * Gets the value of the carriedKeyName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the CarriedKeyName.
+     *
+     * @return the CarriedKeyName.
      */
     public String getCarriedKeyName() {
         return carriedKeyName;
     }
 
     /**
-     * Sets the value of the carriedKeyName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the CarriedKeyName.
+     *
+     * @param value the CarriedKeyName.
      */
     public void setCarriedKeyName(String value) {
         this.carriedKeyName = value;
     }
 
     /**
-     * Gets the value of the recipient property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the recipient.
+     *
+     * @return the recipient.
      */
     public String getRecipient() {
         return recipient;
     }
 
     /**
-     * Sets the value of the recipient property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the recipient.
+     *
+     * @param value the recipient.
      */
     public void setRecipient(String value) {
         this.recipient = value;

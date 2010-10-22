@@ -21,13 +21,13 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+
 import org.w3.xmldsig.Transform;
 
 /**
- * <p>Java class for TransformsType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for TransformsType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="TransformsType">
  *   &lt;complexContent>
@@ -41,41 +41,33 @@ import org.w3.xmldsig.Transform;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TransformsType", propOrder = {
-    "transform"
-})
+@XmlType(name = "TransformsType", propOrder = {"transforms"})
 public class Transforms {
 
     @XmlElement(name = "Transform", namespace = "http://www.w3.org/2000/09/xmldsig#", required = true)
-    protected List<Transform> transform;
+    protected List<Transform> transforms;
 
     /**
-     * Gets the value of the transform property.
-     * 
-     * <p>
+     * Gets the value of the transforms property.
+     * <p/>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the transform property.
-     * 
-     * <p>
+     * This is why there is not a <CODE>set</CODE> method for the transforms property.
+     * <p/>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getTransform().add(newItem);
      * </pre>
-     * 
-     * 
-     * <p>
+     * <p/>
      * Objects of the following type(s) are allowed in the list
      * {@link Transform }
-     * 
-     * 
      */
-    public List<Transform> getTransform() {
-        if (transform == null) {
-            transform = new ArrayList<Transform>();
+    public List<Transform> getTransforms() {
+        if (transforms == null) {
+            transforms = new ArrayList<Transform>();
         }
-        return this.transform;
+        return this.transforms;
     }
 
 }

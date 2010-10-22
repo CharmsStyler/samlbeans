@@ -20,12 +20,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for CipherDataType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for CipherDataType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="CipherDataType">
  *   &lt;complexContent>
@@ -38,62 +36,48 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CipherDataType", propOrder = {
-    "cipherValue",
-    "cipherReference"
-})
+@XmlType(name = "CipherDataType", propOrder = {"cipherValue", "cipherReference"})
 public class CipherData {
 
     @XmlElement(name = "CipherValue")
     protected byte[] cipherValue;
+
     @XmlElement(name = "CipherReference")
     protected CipherReference cipherReference;
 
     /**
-     * Gets the value of the cipherValue property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     * Returns the cipher bytes.
+     *
+     * @return the cipher bytes.
      */
     public byte[] getCipherValue() {
         return cipherValue;
     }
 
     /**
-     * Sets the value of the cipherValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     * Sets the cipher bytes.
+     *
+     * @param value the cipher bytes
      */
     public void setCipherValue(byte[] value) {
-        this.cipherValue = ((byte[]) value);
+        this.cipherValue = value;
     }
 
     /**
-     * Gets the value of the cipherReference property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CipherReference }
-     *     
+     * Returns the {@link org.w3.xmlenc.CipherReference CipherReference}.
+     *
+     * @return the {@link org.w3.xmlenc.CipherReference CipherReference}.
      */
     public CipherReference getCipherReference() {
         return cipherReference;
     }
 
     /**
-     * Sets the value of the cipherReference property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CipherReference }
-     *     
+     * Sets the {@link org.w3.xmlenc.CipherReference CipherReference}.
+     *
+     * @param value the {@link org.w3.xmlenc.CipherReference CipherReference}.
      */
     public void setCipherReference(CipherReference value) {
         this.cipherReference = value;
