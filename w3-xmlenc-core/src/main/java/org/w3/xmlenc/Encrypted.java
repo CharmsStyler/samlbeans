@@ -25,14 +25,13 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import org.w3.xmldsig.KeyInfo;
 
-
 /**
- * <p>Java class for EncryptedType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for EncryptedType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="EncryptedType">
  *   &lt;complexContent>
@@ -51,231 +50,185 @@ import org.w3.xmldsig.KeyInfo;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EncryptedType", propOrder = {
-    "encryptionMethod",
-    "keyInfo",
-    "cipherData",
-    "encryptionProperties"
+        "encryptionMethod",
+        "keyInfo",
+        "cipherData",
+        "encryptionProperties"
 })
-@XmlSeeAlso({
-    EncryptedKey.class,
-    EncryptedData.class
-})
+@XmlSeeAlso({EncryptedKey.class, EncryptedData.class})
 public abstract class Encrypted {
 
     @XmlElement(name = "EncryptionMethod")
     protected EncryptionMethod encryptionMethod;
+
     @XmlElement(name = "KeyInfo", namespace = "http://www.w3.org/2000/09/xmldsig#")
     protected KeyInfo keyInfo;
+
     @XmlElement(name = "CipherData", required = true)
     protected CipherData cipherData;
+
     @XmlElement(name = "EncryptionProperties")
     protected EncryptionProperties encryptionProperties;
+
     @XmlAttribute(name = "Id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
     @XmlSchemaType(name = "ID")
     protected String id;
+
     @XmlAttribute(name = "Type")
     @XmlSchemaType(name = "anyURI")
     protected String type;
+
     @XmlAttribute(name = "MimeType")
     protected String mimeType;
+
     @XmlAttribute(name = "Encoding")
     @XmlSchemaType(name = "anyURI")
     protected String encoding;
 
     /**
-     * Gets the value of the encryptionMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EncryptionMethod }
-     *     
+     * Returns the {@code EncryptionMethod}.
+     *
+     * @return the {@code EncryptionMethod}.
      */
     public EncryptionMethod getEncryptionMethod() {
         return encryptionMethod;
     }
 
     /**
-     * Sets the value of the encryptionMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EncryptionMethod }
-     *     
+     * Sets the {@code EncryptionMethod}.
+     *
+     * @param value the {@code EncryptionMethod}.
      */
     public void setEncryptionMethod(EncryptionMethod value) {
         this.encryptionMethod = value;
     }
 
     /**
-     * Gets the value of the keyInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KeyInfo }
-     *     
+     * Returns the {@code KeyInfo}.
+     *
+     * @return the {@code KeyInfo}.
      */
     public KeyInfo getKeyInfo() {
         return keyInfo;
     }
 
     /**
-     * Sets the value of the keyInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KeyInfo }
-     *     
+     * Sets the {@code KeyInfo}.
+     *
+     * @param value the {@code KeyInfo}.
      */
     public void setKeyInfo(KeyInfo value) {
         this.keyInfo = value;
     }
 
     /**
-     * Gets the value of the cipherData property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CipherData }
-     *     
+     * Returns the {@code CipherData}.
+     *
+     * @return the {@code CipherData}.
      */
     public CipherData getCipherData() {
         return cipherData;
     }
 
     /**
-     * Sets the value of the cipherData property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CipherData }
-     *     
+     * Sets the {@code CipherData}.
+     *
+     * @param value the {@code CipherData}.
      */
     public void setCipherData(CipherData value) {
         this.cipherData = value;
     }
 
     /**
-     * Gets the value of the encryptionProperties property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EncryptionProperties }
-     *     
+     * Returns the {@code EncryptionProperties}.
+     *
+     * @return the {@code EncryptionProperties}.
      */
     public EncryptionProperties getEncryptionProperties() {
         return encryptionProperties;
     }
 
     /**
-     * Sets the value of the encryptionProperties property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EncryptionProperties }
-     *     
+     * Sets the the {@code EncryptionProperties}.
+     *
+     * @param value the {@code EncryptionProperties}.
      */
     public void setEncryptionProperties(EncryptionProperties value) {
         this.encryptionProperties = value;
     }
 
     /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the id.
+     *
+     * @return the id.
      */
     public String getId() {
         return id;
     }
 
     /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the id.
+     *
+     * @param value the id.
      */
     public void setId(String value) {
         this.id = value;
     }
 
     /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the type.
+     *
+     * @return the type.
      */
     public String getType() {
         return type;
     }
 
     /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the type.
+     *
+     * @param value the type.
      */
     public void setType(String value) {
         this.type = value;
     }
 
     /**
-     * Gets the value of the mimeType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the MIME type.
+     *
+     * @return the MIME type.
      */
     public String getMimeType() {
         return mimeType;
     }
 
     /**
-     * Sets the value of the mimeType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the MIME type.
+     *
+     * @param value the MIME type.
      */
     public void setMimeType(String value) {
         this.mimeType = value;
     }
 
     /**
-     * Gets the value of the encoding property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the encoding.
+     *
+     * @return the encoding.
      */
     public String getEncoding() {
         return encoding;
     }
 
     /**
-     * Sets the value of the encoding property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the encoding.
+     *
+     * @param value the encoding.
      */
     public void setEncoding(String value) {
         this.encoding = value;

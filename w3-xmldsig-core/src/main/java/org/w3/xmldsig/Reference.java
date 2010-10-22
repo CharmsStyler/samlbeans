@@ -25,12 +25,10 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-
 /**
- * <p>Java class for ReferenceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for ReferenceType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="ReferenceType">
  *   &lt;complexContent>
@@ -47,42 +45,43 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ReferenceType", propOrder = {
-    "transforms",
-    "digestMethod",
-    "digestValue"
+        "transforms",
+        "digestMethod",
+        "digestValue"
 })
 public class Reference {
 
     @XmlElement(name = "Transforms")
     protected Transforms transforms;
+
     @XmlElement(name = "DigestMethod", required = true)
     protected DigestMethod digestMethod;
+
     @XmlElement(name = "DigestValue", required = true)
     protected byte[] digestValue;
+
     @XmlAttribute(name = "Id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
     @XmlSchemaType(name = "ID")
     protected String id;
+
     @XmlAttribute(name = "URI")
     @XmlSchemaType(name = "anyURI")
     protected String uri;
+
     @XmlAttribute(name = "Type")
     @XmlSchemaType(name = "anyURI")
     protected String type;
 
     /**
      * Gets the value of the transforms property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Transforms }
-     *     
+     *
+     * @return possible object is
+     *         {@link Transforms }
      */
     public Transforms getTransforms() {
         return transforms;
@@ -90,11 +89,9 @@ public class Reference {
 
     /**
      * Sets the value of the transforms property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Transforms }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Transforms }
      */
     public void setTransforms(Transforms value) {
         this.transforms = value;
@@ -102,11 +99,9 @@ public class Reference {
 
     /**
      * Gets the value of the digestMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DigestMethod }
-     *     
+     *
+     * @return possible object is
+     *         {@link DigestMethod }
      */
     public DigestMethod getDigestMethod() {
         return digestMethod;
@@ -114,11 +109,9 @@ public class Reference {
 
     /**
      * Sets the value of the digestMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DigestMethod }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link DigestMethod }
      */
     public void setDigestMethod(DigestMethod value) {
         this.digestMethod = value;
@@ -126,10 +119,9 @@ public class Reference {
 
     /**
      * Gets the value of the digestValue property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     *         byte[]
      */
     public byte[] getDigestValue() {
         return digestValue;
@@ -137,10 +129,9 @@ public class Reference {
 
     /**
      * Sets the value of the digestValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setDigestValue(byte[] value) {
         this.digestValue = ((byte[]) value);
@@ -148,11 +139,9 @@ public class Reference {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getId() {
         return id;
@@ -160,11 +149,9 @@ public class Reference {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
@@ -172,11 +159,9 @@ public class Reference {
 
     /**
      * Gets the value of the uri property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getURI() {
         return uri;
@@ -184,11 +169,9 @@ public class Reference {
 
     /**
      * Sets the value of the uri property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setURI(String value) {
         this.uri = value;
@@ -196,11 +179,9 @@ public class Reference {
 
     /**
      * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getType() {
         return type;
@@ -208,11 +189,9 @@ public class Reference {
 
     /**
      * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setType(String value) {
         this.type = value;

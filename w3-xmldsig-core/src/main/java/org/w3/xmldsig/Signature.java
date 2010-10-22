@@ -27,12 +27,11 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-
 /**
- * <p>Java class for SignatureType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for SignatureType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
+ * <p/>
  * <pre>
  * &lt;complexType name="SignatureType">
  *   &lt;complexContent>
@@ -48,26 +47,28 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SignatureType", propOrder = {
-    "signedInfo",
-    "signatureValue",
-    "keyInfo",
-    "object"
+        "signedInfo",
+        "signatureValue",
+        "keyInfo",
+        "object"
 })
 public class Signature {
 
     @XmlElement(name = "SignedInfo", required = true)
     protected SignedInfo signedInfo;
+
     @XmlElement(name = "SignatureValue", required = true)
     protected SignatureValue signatureValue;
+
     @XmlElement(name = "KeyInfo")
     protected KeyInfo keyInfo;
+
     @XmlElement(name = "Object")
     protected List<SignatureObject> object;
+
     @XmlAttribute(name = "Id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
@@ -76,11 +77,9 @@ public class Signature {
 
     /**
      * Gets the value of the signedInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SignedInfo }
-     *     
+     *
+     * @return possible object is
+     *         {@link SignedInfo }
      */
     public SignedInfo getSignedInfo() {
         return signedInfo;
@@ -88,11 +87,9 @@ public class Signature {
 
     /**
      * Sets the value of the signedInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SignedInfo }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link SignedInfo }
      */
     public void setSignedInfo(SignedInfo value) {
         this.signedInfo = value;
@@ -100,11 +97,9 @@ public class Signature {
 
     /**
      * Gets the value of the signatureValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SignatureValue }
-     *     
+     *
+     * @return possible object is
+     *         {@link SignatureValue }
      */
     public SignatureValue getSignatureValue() {
         return signatureValue;
@@ -112,11 +107,9 @@ public class Signature {
 
     /**
      * Sets the value of the signatureValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SignatureValue }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link SignatureValue }
      */
     public void setSignatureValue(SignatureValue value) {
         this.signatureValue = value;
@@ -124,11 +117,9 @@ public class Signature {
 
     /**
      * Gets the value of the keyInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KeyInfo }
-     *     
+     *
+     * @return possible object is
+     *         {@link KeyInfo }
      */
     public KeyInfo getKeyInfo() {
         return keyInfo;
@@ -136,11 +127,9 @@ public class Signature {
 
     /**
      * Sets the value of the keyInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KeyInfo }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link KeyInfo }
      */
     public void setKeyInfo(KeyInfo value) {
         this.keyInfo = value;
@@ -148,25 +137,19 @@ public class Signature {
 
     /**
      * Gets the value of the object property.
-     * 
-     * <p>
+     * <p/>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the object property.
-     * 
-     * <p>
+     * <p/>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getObject().add(newItem);
      * </pre>
-     * 
-     * 
-     * <p>
+     * <p/>
      * Objects of the following type(s) are allowed in the list
      * {@link SignatureObject }
-     * 
-     * 
      */
     public List<SignatureObject> getObject() {
         if (object == null) {
@@ -177,11 +160,9 @@ public class Signature {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getId() {
         return id;
@@ -189,11 +170,9 @@ public class Signature {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;

@@ -24,12 +24,10 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for ReferenceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for ReferenceType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="ReferenceType">
  *   &lt;complexContent>
@@ -42,42 +40,33 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ReferenceType", propOrder = {
-    "any"
-})
+@XmlType(name = "ReferenceType", propOrder = {"any"})
 public class Reference {
 
     @XmlAnyElement(lax = true)
     protected List<Object> any;
+
     @XmlAttribute(name = "URI", required = true)
     @XmlSchemaType(name = "anyURI")
     protected String uri;
 
     /**
      * Gets the value of the any property.
-     * 
-     * <p>
+     * <p/>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the any property.
-     * 
-     * <p>
+     * <p/>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAny().add(newItem);
      * </pre>
-     * 
-     * 
-     * <p>
+     * <p/>
      * Objects of the following type(s) are allowed in the list
      * {@link Object }
-     * 
-     * 
      */
     public List<Object> getAny() {
         if (any == null) {
@@ -87,24 +76,18 @@ public class Reference {
     }
 
     /**
-     * Gets the value of the uri property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the URI.
+     *
+     * @return the URI.
      */
     public String getURI() {
         return uri;
     }
 
     /**
-     * Sets the value of the uri property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the URI.
+     *
+     * @param value the URI.
      */
     public void setURI(String value) {
         this.uri = value;

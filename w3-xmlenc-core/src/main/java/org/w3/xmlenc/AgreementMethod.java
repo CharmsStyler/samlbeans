@@ -29,10 +29,9 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- * <p>Java class for AgreementMethodType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for AgreementMethodType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="AgreementMethodType">
  *   &lt;complexContent>
@@ -48,52 +47,45 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AgreementMethodType", propOrder = {
-    "content"
-})
+@XmlType(name = "AgreementMethodType", propOrder = {"content"})
 public class AgreementMethod {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "RecipientKeyInfo", namespace = "http://www.w3.org/2001/04/xmlenc#", type = JAXBElement.class),
-        @XmlElementRef(name = "OriginatorKeyInfo", namespace = "http://www.w3.org/2001/04/xmlenc#", type = JAXBElement.class),
-        @XmlElementRef(name = "KA-Nonce", namespace = "http://www.w3.org/2001/04/xmlenc#", type = JAXBElement.class)
+            @XmlElementRef(name = "RecipientKeyInfo", namespace = "http://www.w3.org/2001/04/xmlenc#", type = JAXBElement.class),
+            @XmlElementRef(name = "OriginatorKeyInfo", namespace = "http://www.w3.org/2001/04/xmlenc#", type = JAXBElement.class),
+            @XmlElementRef(name = "KA-Nonce", namespace = "http://www.w3.org/2001/04/xmlenc#", type = JAXBElement.class)
     })
     @XmlMixed
     @XmlAnyElement(lax = true)
     protected List<Object> content;
+
     @XmlAttribute(name = "Algorithm", required = true)
     @XmlSchemaType(name = "anyURI")
     protected String algorithm;
 
     /**
-     * Gets the value of the content property.
-     * 
-     * <p>
+     * Returns the value of the content property.
+     * <p/>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the content property.
-     * 
-     * <p>
+     * <p/>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContent().add(newItem);
      * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Object }
-     * {@link JAXBElement }{@code <}{@link org.w3.xmldsig.KeyInfo KeyInfo}{@code >}
-     * {@link String }
-     * {@link JAXBElement }{@code <}{@link org.w3.xmldsig.KeyInfo KeyInfo}{@code >}
-     * {@link JAXBElement }{@code <}{@link byte[]}{@code >}
-     * 
-     * 
+     * <p/>
+     * Objects of the following type(s) are allowed in the list:
+     * <ul>
+     * <li>{@link Object}</li>
+     * <li>{@link JAXBElement}{@code <}{@link org.w3.xmldsig.KeyInfo KeyInfo}{@code >}</li>
+     * <li>{@link String}</li>
+     * <li>{@link JAXBElement}{@code <}{@link org.w3.xmldsig.KeyInfo KeyInfo}{@code >}</li>
+     * <li>{@link JAXBElement}{@code <byte[]>}</li>
+     * </ul>
      */
     public List<Object> getContent() {
         if (content == null) {
@@ -103,24 +95,18 @@ public class AgreementMethod {
     }
 
     /**
-     * Gets the value of the algorithm property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the algorithm.
+     *
+     * @return the algorithm.
      */
     public String getAlgorithm() {
         return algorithm;
     }
 
     /**
-     * Sets the value of the algorithm property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the algorithm.
+     *
+     * @param value the algorithm.
      */
     public void setAlgorithm(String value) {
         this.algorithm = value;

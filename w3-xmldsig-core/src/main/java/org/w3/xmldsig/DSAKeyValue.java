@@ -22,10 +22,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for DSAKeyValueType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for DSAKeyValueType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="DSAKeyValueType">
  *   &lt;complexContent>
@@ -47,8 +46,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DSAKeyValueType", propOrder = {
@@ -64,16 +61,22 @@ public class DSAKeyValue {
 
     @XmlElement(name = "P")
     protected byte[] p;
+
     @XmlElement(name = "Q")
     protected byte[] q;
+
     @XmlElement(name = "G")
     protected byte[] g;
+
     @XmlElement(name = "Y", required = true)
     protected byte[] y;
+
     @XmlElement(name = "J")
     protected byte[] j;
+
     @XmlElement(name = "Seed")
     protected byte[] seed;
+
     @XmlElement(name = "PgenCounter")
     protected byte[] pgenCounter;
 

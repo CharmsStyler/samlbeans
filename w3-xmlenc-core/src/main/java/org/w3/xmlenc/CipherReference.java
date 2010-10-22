@@ -22,12 +22,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for CipherReferenceType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for CipherReferenceType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="CipherReferenceType">
  *   &lt;complexContent>
@@ -40,64 +38,49 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CipherReferenceType", propOrder = {
-    "transforms"
-})
+@XmlType(name = "CipherReferenceType", propOrder = {"transforms"})
 public class CipherReference {
 
     @XmlElement(name = "Transforms")
     protected Transforms transforms;
+
     @XmlAttribute(name = "URI", required = true)
     @XmlSchemaType(name = "anyURI")
     protected String uri;
 
     /**
-     * Gets the value of the transforms property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Transforms }
-     *     
+     * Returns the Transforms.
+     *
+     * @return the Transforms.
      */
     public Transforms getTransforms() {
         return transforms;
     }
 
     /**
-     * Sets the value of the transforms property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Transforms }
-     *     
+     * Sets the Transforms.
+     *
+     * @param value the Transforms.
      */
     public void setTransforms(Transforms value) {
         this.transforms = value;
     }
 
     /**
-     * Gets the value of the uri property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the URI.
+     *
+     * @return the URI.
      */
     public String getURI() {
         return uri;
     }
 
     /**
-     * Sets the value of the uri property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the URI.
+     *
+     * @param value the URI.
      */
     public void setURI(String value) {
         this.uri = value;

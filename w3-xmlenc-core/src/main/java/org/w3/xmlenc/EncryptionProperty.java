@@ -31,14 +31,13 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import javax.xml.namespace.QName;
+
 import org.w3c.dom.Element;
 
-
 /**
- * <p>Java class for EncryptionPropertyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for EncryptionPropertyType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
  * <pre>
  * &lt;complexType name="EncryptionPropertyType">
  *   &lt;complexContent>
@@ -53,52 +52,45 @@ import org.w3c.dom.Element;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "EncryptionPropertyType", propOrder = {
-    "content"
-})
+@XmlType(name = "EncryptionPropertyType", propOrder = {"content"})
 public class EncryptionProperty {
 
     @XmlMixed
     @XmlAnyElement(lax = true)
     protected List<Object> content;
+
     @XmlAttribute(name = "Target")
     @XmlSchemaType(name = "anyURI")
     protected String target;
+
     @XmlAttribute(name = "Id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
     @XmlSchemaType(name = "ID")
     protected String id;
+
     @XmlAnyAttribute
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
      * Gets the value of the content property.
-     * 
-     * <p>
+     * <p/>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the content property.
-     * 
-     * <p>
+     * <p/>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContent().add(newItem);
      * </pre>
-     * 
-     * 
-     * <p>
+     * <p/>
      * Objects of the following type(s) are allowed in the list
      * {@link Element }
      * {@link Object }
      * {@link String }
-     * 
-     * 
      */
     public List<Object> getContent() {
         if (content == null) {
@@ -108,48 +100,36 @@ public class EncryptionProperty {
     }
 
     /**
-     * Gets the value of the target property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the target.
+     *
+     * @return the target.
      */
     public String getTarget() {
         return target;
     }
 
     /**
-     * Sets the value of the target property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the target.
+     *
+     * @param value the target.
      */
     public void setTarget(String value) {
         this.target = value;
     }
 
     /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * Returns the id.
+     *
+     * @return the id.
      */
     public String getId() {
         return id;
     }
 
     /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * Sets the id.
+     *
+     * @param value the id.
      */
     public void setId(String value) {
         this.id = value;
@@ -157,17 +137,14 @@ public class EncryptionProperty {
 
     /**
      * Gets a map that contains attributes that aren't bound to any typed property on this class.
-     * 
-     * <p>
-     * the map is keyed by the name of the attribute and 
+     * <p/>
+     * the map is keyed by the name of the attribute and
      * the value is the string value of the attribute.
-     * 
+     * <p/>
      * the map returned by this method is live, and you can add new attribute
      * by updating the map directly. Because of this design, there's no setter.
-     * 
-     * 
-     * @return
-     *     always non-null
+     *
+     * @return always non-null
      */
     public Map<QName, String> getOtherAttributes() {
         return otherAttributes;

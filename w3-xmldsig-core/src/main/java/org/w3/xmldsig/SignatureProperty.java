@@ -27,14 +27,14 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import org.w3c.dom.Element;
 
-
 /**
- * <p>Java class for SignaturePropertyType complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ * Java class for SignaturePropertyType complex type.
+ * <p/>
+ * The following schema fragment specifies the expected content contained within this class.
+ * <p/>
  * <pre>
  * &lt;complexType name="SignaturePropertyType">
  *   &lt;complexContent>
@@ -48,21 +48,19 @@ import org.w3c.dom.Element;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SignaturePropertyType", propOrder = {
-    "content"
-})
+@XmlType(name = "SignaturePropertyType", propOrder = {"content"})
 public class SignatureProperty {
 
     @XmlMixed
     @XmlAnyElement(lax = true)
     protected List<Object> content;
+
     @XmlAttribute(name = "Target", required = true)
     @XmlSchemaType(name = "anyURI")
     protected String target;
+
     @XmlAttribute(name = "Id")
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlID
@@ -71,27 +69,21 @@ public class SignatureProperty {
 
     /**
      * Gets the value of the content property.
-     * 
-     * <p>
+     * <p/>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the content property.
-     * 
-     * <p>
+     * <p/>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getContent().add(newItem);
      * </pre>
-     * 
-     * 
-     * <p>
+     * <p/>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
      * {@link Element }
      * {@link Object }
-     * 
-     * 
      */
     public List<Object> getContent() {
         if (content == null) {
@@ -102,11 +94,9 @@ public class SignatureProperty {
 
     /**
      * Gets the value of the target property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getTarget() {
         return target;
@@ -114,11 +104,9 @@ public class SignatureProperty {
 
     /**
      * Sets the value of the target property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTarget(String value) {
         this.target = value;
@@ -126,11 +114,9 @@ public class SignatureProperty {
 
     /**
      * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     *         {@link String }
      */
     public String getId() {
         return id;
@@ -138,11 +124,9 @@ public class SignatureProperty {
 
     /**
      * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setId(String value) {
         this.id = value;
